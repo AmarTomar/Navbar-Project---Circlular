@@ -1,0 +1,121 @@
+/* General CSS Boilerplate */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy Medium";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Add more global styles as needed */
+#main {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url('./wallpaperflare.com_wallpaper.jpg');
+  background-size: cover;
+}
+#circle {
+  position: absolute;
+  left: -30vh;
+  top: 10%;
+  transform: translate(0%, -50%) rotate(120deg);
+  width: 40vw;
+  height: 40vw;
+  border: 2px solid springgreen;
+  border-radius: 50%;
+  /* background-color: red; */
+}
+.strip {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -50%);
+  width: 100%;
+  height: 60px;
+  transform-origin: 0%;
+}
+
+.str1 {
+  transform: translate(0%, -50%) rotate(0deg);
+  /* background-color: red; */
+}
+.str2 {
+  transform: translate(0%, -50%) rotate(20deg);
+  /* background-color: grey; */
+}
+.str3 {
+  transform: translate(0%, -50%) rotate(40deg);
+  /* background-color: antiquewhite; */
+}
+.str4 {
+  transform: translate(0%, -50%) rotate(60deg);
+  /* background-color: springgreen; */
+}
+.str5 {
+  transform: translate(0%, -50%) rotate(80deg);
+  /* background-color: yellow; */
+}
+
+.strip .first {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.first .smcir {
+  position: absolute;
+  top: 50%;
+  right: -0.5vw;
+  outline: 2px solid springgreen;
+  transform: translate(0, -50%);
+  border-radius: 50%;
+  width: .8vw;
+  height: .8vw;
+  background-color:springgreen;
+}
+.strip .Second {
+  padding-left: 30px;
+  width: 50%;
+  height: 100%;
+  opacity: .4;
+}
+.strip .Second h4 {
+    text-transform: uppercase;
+    letter-spacing: .5vw;
+  font-size: 2vw;
+}
+.strip .Second h6 {
+  font-size: 1vw;
+  letter-spacing: .5vw;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+#panel {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  transform: translate(0%, -50%);
+  height: 30%;
+  width: 5%;
+}
+.mncircle {
+  cursor: pointer;
+  opacity: 0.2;
+  width: 1.2vw;
+  height: 1.2vw;
+  border-radius: 50%;
+  background-color: springgreen;
+}
+
